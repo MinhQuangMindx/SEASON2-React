@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./main.js" type="module"></script>
+    <script src="./helper.js" type="module"></script>
+</head>
+<body>
+    
+    <!-- 1. Viết hàm kiểm tra định dạng một số điện thoại -->
+    <!-- 2. Viết hàm kiểm tra email -->
+    <!-- 3. viết hàm kiểm tra giá trị nhập vào chỉ chứa ký tự số -->
+    <!-- 4. viết hàm kiểm tra giá trị nhập vào chỉ chứa ký tự chữ -->
+
+    <h1>Hello word</h1>
+    <div id="container" style="display: flex; flex-direction: column; "></div>
+
+    <script>
+        const pList = 100;
+
+        const dom = this.document // Câu lệnh bắt buộc
+        let containerElement = dom.getElementById("container")
+
+        for(let i = 0; i<pList;i++) {
+            // Giá trị này sẽ truyển dữ liệu vào HTML cí
+            let pElement = dom.createElement("span")
+            pElement.innerHTML = "San pham so: " + i;
+            containerElement.appendChild(pElement)
+        }
+    </script>
+
+
+</body>
+</html>
